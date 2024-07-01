@@ -1,11 +1,12 @@
 import React from 'react'
 import Link from '@/components/Link'
 import 'css/tailwind.css'
-
+import TimeLine from './timelinePage'
+import Introduction from '@/components/Introduction'
 const HomePage = () => {
   return (
     <div>
-      <div className="flex min-h-screen flex-col items-center justify-center bg-gray-800 text-white">
+      {/* <div className="flex min-h-screen flex-col items-center justify-center bg-gray-800 text-white">
         <div className="animate-fadeIn">
           <h1 className="mb-4 text-5xl font-bold">
             Hello, I'm Shevon Zhang <span className="animate-wave">👋</span>
@@ -20,8 +21,8 @@ const HomePage = () => {
             Learn More About Me
           </Link>
         </div>
-      </div>
-
+      </div> */}
+      <Introduction />
       <div
         id="about"
         className="flex min-h-screen flex-col items-center justify-center bg-white p-8 text-gray-800"
@@ -38,6 +39,7 @@ const HomePage = () => {
           Download My Resume
         </a>
       </div>
+      <TimeLine />
     </div>
   )
 }

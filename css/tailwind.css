@@ -80,3 +80,22 @@ input:-webkit-autofill:focus {
   display: inline-block;
   animation: wave 1.5s infinite;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+.fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
