@@ -21,8 +21,8 @@ const Introduction = () => {
             typeSpeed={70}
           />
         </h1>
-        <p className="text-2xl">Front-End Developer</p>
       </div>
+      <p className="text-2xl">Front-End Developer</p>
       <div className="z-10 mt-8">
         <Link href="#about" className="rounded bg-blue-500 px-4 py-2 transition hover:bg-blue-700">
           Learn More About Me
