@@ -2,7 +2,7 @@
 'use client'
 
 import React from 'react'
-import TimelineItem from '../components/timeLine'
+import TimelineItem from '../../components/timeLine'
 
 const timelineData = [
   { date: '2023', title: 'Title 1', description: 'Description 1' },

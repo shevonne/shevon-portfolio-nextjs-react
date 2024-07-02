@@ -7,7 +7,7 @@ import Link from '@/components/Link'
 
 const Introduction = () => {
   return (
-    <div className="relative flex min-h-screen flex-col items-center justify-center bg-gray-800 text-white">
+    <div className="relative flex min-h-screen flex-col items-center justify-center text-white">
       <h1 className="mb-4 text-5xl font-bold">
         Hi There! <span className="animate-wave"> 👋 </span>
       </h1>
