@@ -5,11 +5,13 @@ import TimeLine from './timelinePage'
 import Introduction from './Introduction'
 import AboutMe from './aboutMe'
 import Page from 'app/about/page'
+import SkillsPage from './skills/page'
 const HomePage = () => {
   return (
     <div>
       <Introduction />
-      <Page />
+      {/* <Page /> */}
+      <SkillsPage />
       <TimeLine />
     </div>
   )

@@ -1,8 +1,7 @@
-// components/TimelineItem.tsx
 'use client'
 
 import React, { useState } from 'react'
-import { AcademicCapIcon, BriefcaseIcon } from '@heroicons/react/24/solid'
+import { motion } from 'framer-motion'
 import useIntersectionObserver from '../data/hooks/useIntersectionObserver'
 
 interface TimelineItemProps {
@@ -17,36 +16,65 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ index, date, title, descrip
   const ref = useIntersectionObserver(() => setIsVisible(true))
 
   const isLeft = index % 2 === 0
-  const icon =
-    index % 2 === 0 ? (
-      <AcademicCapIcon className="h-6 w-6" />
-    ) : (
-      <BriefcaseIcon className="h-6 w-6" />
-    )
 
   return (
-    <div
-      ref={ref}
-      className={`flex ${isLeft ? 'justify-start' : 'justify-end'} relative mb-8 transform transition-transform duration-500 ${
-        isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-      }`}
-    >
-      <div className={`w-1/2 ${isLeft ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-        <div className="relative rounded-lg bg-gradient-to-r from-blue-500 to-green-500 p-6 shadow-lg">
-          <div className="mb-1 flex items-center">
-            <span className="font-medium text-white">{date}</span>
+    <div ref={ref} className="relative mb-8 flex items-center justify-between">
+      {isLeft ? (
+        <>
+          {/* 左侧显示年份 */}
+          <div className="flex w-1/2 flex-row items-center justify-end pr-4">
+            <span className="mb-2 font-medium text-gray-800">{date}</span>
+            {/* 圆点 */}
+            <motion.div
+              className="mb-2 h-6 w-6 rounded-full border-2 border-gray-800"
+              style={{
+                position: 'absolute',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                backgroundColor: isVisible ? 'black' : 'white',
+                zIndex: 10,
+              }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            />
           </div>
-          <h3 className="mb-2 text-xl font-semibold text-white">{title}</h3>
-          <p className="text-gray-200">{description}</p>
-        </div>
-      </div>
-      <div
-        className={`absolute top-0 ${isLeft ? 'right-1/2 mr-4' : 'left-1/2 ml-4'} flex h-full items-center`}
-      >
-        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-lg">
-          {icon}
-        </div>
-      </div>
+          {/* 右侧显示详细信息 */}
+          <div className="w-1/2 pl-8 text-left">
+            <div className="relative rounded-lg border border-gray-800 bg-transparent p-6 shadow-lg">
+              <h3 className="mb-2 text-xl font-semibold text-gray-900">{title}</h3>
+              <p className="text-gray-600">{description}</p>
+            </div>
+          </div>
+        </>
+      ) : (
+        <>
+          {/* 左侧显示详细信息 */}
+          <div className="w-1/2 pr-8 text-right">
+            <div className="relative rounded-lg border border-gray-800 bg-transparent p-6 shadow-lg">
+              <h3 className="mb-2 text-xl font-semibold text-gray-900">{title}</h3>
+              <p className="text-gray-600">{description}</p>
+            </div>
+          </div>
+          {/* 右侧显示年份 */}
+          <div className="flex w-1/2 flex-row items-center pl-4">
+            <motion.div
+              className="mb-2 h-6 w-6 rounded-full border-2 border-gray-800"
+              style={{
+                position: 'absolute',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                backgroundColor: isVisible ? 'black' : 'white',
+                zIndex: 10,
+              }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+            />
+            <span className="mt-2 font-medium text-gray-800">{date}</span>
+          </div>
+        </>
+      )}
     </div>
   )
 }
