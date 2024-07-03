@@ -8,17 +8,17 @@ import AnimatedCartoon from './animate'
 
 const Introduction = () => {
   return (
-    <div className="relative flex min-h-screen flex-row  items-center justify-center text-white">
+    <div className="item-top relative flex min-h-screen flex-row justify-center text-white">
       {/* left */}
       <div className="basis-3/5">
-        <h1 className="mb-20 text-7xl font-bold text-gray-900 dark:text-gray-100">
+        <h1 className="py-20 text-7xl font-bold text-gray-900 dark:text-gray-100">
           Hi There! <span className="animate-wave"> 👋 </span>
         </h1>
 
-        <div className="z-10 animate-fadeIn text-gray-900 dark:text-gray-100">
+        <div className="z-10 animate-fadeIn">
           <h1 className="mb-10 text-5xl font-bold text-gray-900 dark:text-gray-100">
             <Typewriter
-              words={["I'm Shevon X.Zhang"]}
+              words={["I'm Shevon X.Zhang", 'Front-End Developer']}
               loop={false}
               cursor
               cursorStyle="|"
