@@ -11,12 +11,12 @@ const Introduction = () => {
     <div className="relative flex min-h-screen flex-row  items-center justify-center text-white">
       {/* left */}
       <div className="basis-3/5">
-        <h1 className="mb-20 text-7xl font-bold">
+        <h1 className="mb-20 text-7xl font-bold text-gray-900 dark:text-gray-100">
           Hi There! <span className="animate-wave"> 👋 </span>
         </h1>
 
-        <div className="z-10 animate-fadeIn">
-          <h1 className="mb-10 text-5xl font-bold">
+        <div className="z-10 animate-fadeIn text-gray-900 dark:text-gray-100">
+          <h1 className="mb-10 text-5xl font-bold text-gray-900 dark:text-gray-100">
             <Typewriter
               words={["I'm Shevon X.Zhang"]}
               loop={false}
@@ -26,8 +26,8 @@ const Introduction = () => {
             />
           </h1>
         </div>
-        <p className="mb-10 text-4xl">Front-End Developer</p>
-        <p className="text-1xl mb-10">
+        <p className="mb-10 text-4xl text-gray-900 dark:text-gray-100">Front-End Developer</p>
+        <p className="text-1xl mb-10 text-gray-900 dark:text-gray-100">
           I have over nine years of experience as a front-end developer. I specialize in creating
           user-friendly interfaces using technologies like Vue.js, JavaScript, and Echarts. I’ve led
           teams to build smart city systems and data visualization platforms. I love solving
