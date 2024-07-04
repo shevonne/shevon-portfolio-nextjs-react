@@ -1,12 +1,12 @@
 const headerNavLinks = [
-  { href: '/', title: 'Home 主页' },
+  { href: '/', title: 'Home' },
   // { href: '/tags', title: 'Tags' },
-  { href: '/about', title: 'About 关于我' },
-  { href: '/test', title: 'Skills 技能' },
-  { href: '/test', title: 'Professional Experience 工作经历' },
-  { href: '/projects', title: 'Projects 项目' },
-  { href: '/blog', title: 'Blog 博客' },
-  { href: '/test', title: 'Contact 联系我' },
+  { href: '/about', title: 'About' },
+  { href: '/skills', title: 'Skills' },
+  { href: '/pro', title: 'Professional Experience' },
+  { href: '/projects', title: 'Projects' },
+  { href: '/blog', title: 'Blog' },
+  //教育和荣誉
 ]
 
 export default headerNavLinks

@@ -4,15 +4,18 @@ import 'css/tailwind.css'
 import TimeLine from './timelinePage'
 import Introduction from './Introduction'
 import AboutMe from './aboutMe'
-import Page from 'app/about/page'
+import MePage from 'app/about/page' //关于我
 import SkillsPage from './skills/page'
+import Projects from 'app/projects/page'
+
 const HomePage = () => {
   return (
     <div>
       <Introduction />
-      {/* <Page /> */}
+      <MePage />
       <SkillsPage />
       <TimeLine />
+      <Projects />
     </div>
   )
 }

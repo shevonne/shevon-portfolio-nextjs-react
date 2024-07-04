@@ -15,8 +15,8 @@ export default function AuthorLayout({ children, content }: Props) {
     <>
       <div className="divide-y divide-slate-500">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-start text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            About
+          <h1 className="text-start text-4xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-4xl md:leading-14">
+            Let Me Introduce Myself
           </h1>
         </div>
         <div className="space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">

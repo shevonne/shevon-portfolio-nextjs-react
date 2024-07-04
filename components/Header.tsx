@@ -24,7 +24,7 @@ const Header = () => {
               />
             </div>
             {typeof siteMetadata.headerTitle === 'string' ? (
-              <div className="hidden h-6 text-3xl font-semibold sm:block">
+              <div className="hidden h-6 text-3xl font-bold font-semibold sm:block">
                 {siteMetadata.headerTitle}
               </div>
             ) : (
@@ -40,14 +40,14 @@ const Header = () => {
             <Link
               key={link.title}
               href={link.href}
-              className="hidden font-medium text-gray-900 hover:text-primary-500 dark:text-gray-100 dark:hover:text-primary-400
+              className="hidden text-2xl font-medium text-gray-900 underline-offset-8 hover:text-primary-500 hover:underline dark:text-gray-100 dark:hover:text-primary-400
               sm:block"
             >
               {link.title}
             </Link>
           ))}
-        <SearchButton />
-        <ThemeSwitch />
+        {/* <SearchButton />
+        <ThemeSwitch /> */}
         <MobileNav />
       </div>
     </header>

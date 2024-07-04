@@ -23,6 +23,7 @@ const skills = [
       'Tailwind CSS',
       'SVG LottieFiles',
       'Uniapp',
+      'Responsive Web Design',
       'Network Knowledge (HTTP, TCP, etc.)',
     ],
     bgColor: '#3B82F6', // Tailwind blue-500
