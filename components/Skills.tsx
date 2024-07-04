@@ -1,7 +1,8 @@
 'use client'
 
 import React from 'react'
-import { motion } from 'framer-motion'
+import { color, motion } from 'framer-motion'
+import { Background, Opacity } from 'tsparticles-engine'
 
 interface Skill {
   type: string
@@ -19,9 +20,18 @@ const SkillComponent: React.FC<{ skill: Skill }> = ({ skill }) => {
         {skill.skills.map((skillItem, index) => (
           <motion.div
             key={index}
-            className={`m-2 rounded-full border px-4 py-2 font-bold ${skill.borderColor} ${skill.textColor}`}
-            style={{ backgroundColor: `${skill.bgColor}1A` }} // 1A is hex for 10% opacity
-            whileHover={{ scale: 1.1 }}
+            className={`m-2 rounded-full border px-4 py-2 text-base font-bold ${skill.borderColor} ${skill.textColor}`}
+            style={{ backgroundColor: `${skill.bgColor}33` }} // 1A is hex for 10% opacity
+            whileHover={{
+              scale: 1.2,
+              backgroundColor: `${skill.bgColor}CC`,
+              color: '#fff',
+              transition: {
+                type: 'spring',
+                stiffness: 98, // 弹簧的刚度
+                damping: 8, // 阻尼系数，影响弹簧振荡的次数
+              },
+            }}
             whileTap={{ scale: 0.9 }}
           >
             {skillItem}

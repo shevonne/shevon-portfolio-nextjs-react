@@ -18,24 +18,32 @@ const skills = [
       'Bootstrap',
       'Echarts',
       'WeChat Mini-Programs',
+
+      'Tailwind CSS',
+      'SVG LottieFiles',
+      'Uniapp',
+      'Network Knowledge (HTTP, TCP, etc.)',
     ],
     bgColor: '#3B82F6', // Tailwind blue-500
     borderColor: 'border-blue-500',
     textColor: 'text-blue-500',
   },
-  {
-    type: 'Mobile Development',
-    skills: ['Uniapp'],
-    bgColor: '#10B981', // Tailwind green-500
-    borderColor: 'border-green-500',
-    textColor: 'text-green-500',
-  },
+  // {
+  //   type: 'Mobile Development',
+  //   skills: ['Uniapp'],
+  //   bgColor: '#10B981',
+  //   borderColor: 'border-teal-700',
+  //   textColor: 'text-teal-700',
+  // },
   {
     type: 'Backend Development & Tools',
-    skills: ['Node.js', 'Koa2', 'MySQL', 'Git', 'Network Knowledge (HTTP, TCP, etc.)'],
-    bgColor: '#F59E0B', // Tailwind yellow-500
-    borderColor: 'border-yellow-500',
-    textColor: 'text-yellow-500',
+    skills: ['Node.js', 'Next.js', 'Koa2', 'MySQL', 'Git'],
+    bgColor: '#10B981',
+    borderColor: 'border-teal-700',
+    textColor: 'text-teal-700',
+    // bgColor: '#fbbf24',
+    // borderColor: 'border-amber-700',
+    // textColor: 'text-amber-700',
   },
   {
     type: 'Additional Skills',
@@ -48,9 +56,9 @@ const skills = [
       'Project Management',
       'Technical Documentation Writing',
     ],
-    bgColor: '#EF4444', // Tailwind red-500
-    borderColor: 'border-red-500',
-    textColor: 'text-red-500',
+    bgColor: '#EF4444',
+    borderColor: 'border-pink-700',
+    textColor: 'text-pink-700',
   },
 ]
 

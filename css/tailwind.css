@@ -109,3 +109,8 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
+.mybadge:hover {
+  opacity: 1;
+  color: #fff;
+}
