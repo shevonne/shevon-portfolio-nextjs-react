@@ -114,3 +114,9 @@ body {
   opacity: 1;
   color: #fff;
 }
+
+.about-hight {
+  /* border-bottom: 1px dashed #99bdae; */
+  text-decoration: underline wavy #99bdae;
+  font-weight: bold;
+}

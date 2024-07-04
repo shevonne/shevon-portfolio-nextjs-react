@@ -10,6 +10,7 @@ const skills = [
       'React',
       'Vue.js',
       'JavaScript',
+      'TypeScript',
       'HTML',
       'CSS',
       'SCSS',
@@ -37,7 +38,7 @@ const skills = [
   // },
   {
     type: 'Backend Development & Tools',
-    skills: ['Node.js', 'Next.js', 'Koa2', 'MySQL', 'Git'],
+    skills: ['Node.js', 'Next.js', 'Koa2', 'MySQL', 'Git', 'VS Code', 'ESLint'],
     bgColor: '#10B981',
     borderColor: 'border-teal-700',
     textColor: 'text-teal-700',
