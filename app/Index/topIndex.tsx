@@ -3,10 +3,11 @@ import Link from '@/components/Link'
 import 'css/tailwind.css'
 import TimeLine from './timelinePage'
 import Introduction from './Introduction'
-import AboutMe from './aboutMe'
-import MePage from 'app/about/page' //关于我
+// import AboutMe from './aboutMe'
+// import MePage from 'app/about/page' //关于我
+import MePage from '../about/page'
 import SkillsPage from './skills/page'
-import Projects from 'app/projects/page'
+import Projects from '../projects/page'
 
 const TopIndexPage = () => {
   return (
