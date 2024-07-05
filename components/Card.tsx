@@ -10,7 +10,7 @@ const Card = ({ title, description, imgSrc, href }) => (
             <Image
               alt={title}
               src={imgSrc}
-              className="rounded-lg object-cover object-center transition delay-150 duration-300 ease-in-out hover:-translate-y-4 hover:scale-125 md:h-36 lg:h-48"
+              className=" rounded-lg object-cover object-center transition delay-150 duration-300 ease-in-out hover:-translate-y-4 hover:scale-125 md:h-36 lg:h-48"
               width={544}
               height={306}
             />
@@ -19,13 +19,13 @@ const Card = ({ title, description, imgSrc, href }) => (
           <Image
             alt={title}
             src={imgSrc}
-            className="rounded-lg object-cover object-center transition delay-150 duration-300 ease-in-out hover:-translate-y-4 hover:scale-125 md:h-36 lg:h-48"
+            className=" rounded-lg object-cover object-center transition delay-150 duration-300 ease-in-out hover:-translate-y-4 hover:scale-125 md:h-36 lg:h-48"
             width={544}
             height={306}
           />
         ))}
       <div className="p-10">
-        <h2 className="mb-3 text-2xl font-bold leading-8 tracking-tight">
+        <h2 className="mb-3 animate-bounce  text-2xl font-bold leading-8 tracking-tight hover:text-3xl hover:text-blue-500">
           {href ? (
             <Link href={href} aria-label={`Link to ${title}`}>
               {title}
@@ -34,7 +34,7 @@ const Card = ({ title, description, imgSrc, href }) => (
             title
           )}
         </h2>
-        <p className="prose mb-3 max-w-none text-gray-500 dark:text-gray-400">{description}</p>
+        <p className="prose mb-3 max-w-none  text-gray-900 dark:text-gray-400">{description}</p>
         {href && (
           <Link
             href={href}

@@ -37,7 +37,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
         <>
           {/* 左侧显示年份 */}
           <div className="flex w-1/2 flex-row items-center justify-end pr-4">
-            <span className="mb-2 animate-pulse font-medium text-gray-800">{date}</span>
+            <span className="mb-2 animate-bounce font-medium text-gray-800">{date}</span>
             {/* 圆点 */}
             <motion.div
               className="absolute h-6 w-6 rounded-full border-2 border-gray-800"
@@ -55,23 +55,23 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
           {/* 右侧显示详细信息 */}
           <div className="w-1/2 pl-8 text-left">
             <div className="group relative rounded-lg border border-gray-800 bg-transparent p-6 leading-relaxed shadow-lg duration-300 ease-in-out">
-              <h3 className="mb-5 flex items-center justify-items-center text-2xl font-semibold  text-blue-500 duration-300 ease-in-out group-hover:text-3xl">
+              <h3 className="mb-5 flex items-center justify-items-center text-2xl font-semibold text-blue-500 duration-300 ease-in-out group-hover:text-3xl">
                 {/* <UserIcon className="h-5 w-5 text-blue-500" /> */}
                 {position}
               </h3>
-              <p className="mb-2 flex items-center justify-items-center group-hover:text-xl">
-                <BuildingOffice2Icon className="mr-2 h-5 w-5 text-gray-500" />
+              <p className="mb-2 flex items-center justify-items-center text-gray-900 group-hover:text-xl">
+                <BuildingOffice2Icon className="mr-2 h-5 w-5 text-gray-900" />
                 {company}
               </p>
-              <p className="mb-2 flex items-center justify-items-center text-gray-600">
-                <MapPinIcon className="mr-2 h-5 w-5 text-gray-500" />
+              <p className="mb-2 flex items-center justify-items-center text-gray-900">
+                <MapPinIcon className="mr-2 h-5 w-5 text-gray-900" />
                 {address}
               </p>
-              <p className="mb-2 flex items-center justify-items-center text-gray-600">
-                <PresentationChartLineIcon className="mr-2 h-5 w-5 text-gray-500" />
+              <p className="mb-2 flex items-center justify-items-center text-gray-900">
+                <PresentationChartLineIcon className="mr-2 h-5 w-5 text-gray-900" />
                 What I Do
               </p>
-              <ul className="description list-disc pl-5 text-gray-600">
+              <ul className="description list-disc pl-5 text-gray-900">
                 {description.map((line, idx) => (
                   <li key={idx} className="">
                     {line}
@@ -84,20 +84,31 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
       ) : (
         <>
           {/* 左侧显示详细信息 */}
-          <div className="w-1/2 pr-8 text-right">
-            <div className="group relative rounded-lg border border-gray-800 bg-transparent p-6 shadow-lg">
-              <h3 className="mb-2 text-2xl font-semibold text-blue-500 duration-300 ease-in-out group-hover:text-3xl">
+          <div className="w-1/2 pr-8 text-left">
+            <div className="group relative rounded-lg border border-gray-800 bg-transparent p-6 leading-relaxed shadow-lg duration-300 ease-in-out">
+              <h3 className="mb-5 flex text-2xl font-semibold  text-blue-500 duration-300 ease-in-out group-hover:text-3xl">
+                {/* <UserIcon className="h-5 w-5 text-blue-500" /> */}
                 {position}
               </h3>
-              <p className="group-hover:text-xl">{company}</p>
-              <p className="text-gray-600">{address}</p>
-              <div className="description">
+              <p className="mb-2 flex text-gray-900 group-hover:text-xl">
+                <BuildingOffice2Icon className="mr-2 h-5 w-5 text-gray-900" />
+                {company}
+              </p>
+              <p className="mb-2 flex text-gray-900">
+                <MapPinIcon className="mr-2 h-5 w-5 text-gray-900" />
+                {address}
+              </p>
+              <p className="mb-2 flex text-gray-900">
+                <PresentationChartLineIcon className="mr-2 h-5 w-5 text-gray-900" />
+                What I Do
+              </p>
+              <ul className="description list-disc pl-5 text-gray-900">
                 {description.map((line, idx) => (
-                  <p key={idx} className="text-gray-600">
+                  <li key={idx} className="">
                     {line}
-                  </p>
+                  </li>
                 ))}
-              </div>
+              </ul>
             </div>
           </div>
           {/* 右侧显示年份 */}
@@ -114,7 +125,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             />
-            <span className="mt-2 animate-pulse font-medium text-gray-800">{date}</span>
+            <span className="mt-2 animate-bounce font-medium text-gray-800">{date}</span>
           </div>
         </>
       )}
