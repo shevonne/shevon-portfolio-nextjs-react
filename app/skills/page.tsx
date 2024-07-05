@@ -1,5 +1,5 @@
 import React from 'react'
-import SkillsPage from '../Index/skills/page'
+import SkillsPage from '../firstPage/skills/page'
 export default function skillPage() {
   return (
     <div>
