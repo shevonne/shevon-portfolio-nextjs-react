@@ -20,7 +20,7 @@ const Introduction = () => {
             <Typewriter
               words={[
                 'Front-End Engineer with Full Stack Skills',
-                'Hands-On Explorer And Focus on Detail',
+                'Hands-On Explorer with Attention to Detail',
                 'Work-Life Balance Promoter',
               ]}
               loop={false}
@@ -41,13 +41,13 @@ const Introduction = () => {
         <div className="z-10 mt-8">
           <Link
             href="/about"
-            className="mr-10 rounded bg-blue-500 px-4 py-2 text-2xl font-bold transition hover:bg-blue-700"
+            className="text-1xl mr-10 rounded bg-blue-500 px-4 py-2 font-bold transition hover:bg-blue-700"
           >
             ABOUT ME
           </Link>
           <Link
             href="/about"
-            className="rounded bg-blue-500 px-4 py-2 text-2xl font-bold transition hover:bg-blue-700"
+            className="text-1xl rounded bg-blue-500 px-4 py-2 font-bold transition hover:bg-blue-700"
           >
             DOWNLOAD MY RESUME
           </Link>
