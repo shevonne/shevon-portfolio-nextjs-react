@@ -8,7 +8,7 @@ import MePage from 'app/about/page' //关于我
 import SkillsPage from './skills/page'
 import Projects from 'app/projects/page'
 
-const HomePage = () => {
+const TopIndexPage = () => {
   return (
     <div>
       <Introduction />
@@ -20,4 +20,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default TopIndexPage
