@@ -5,7 +5,7 @@ const headerNavLinks = [
   { href: '/skills', title: 'Skills' },
   { href: '/pro', title: 'Professional Experience' },
   { href: '/projects', title: 'Projects' },
-  { href: '/blog', title: 'Blog' },
+  // { href: '/blog', title: 'Blog' },
   //教育和荣誉
 ]
 

@@ -45,7 +45,9 @@ const Introduction = () => {
           </button>
           <button className="text-1xl flex rounded bg-blue-500 px-4 py-2 font-bold transition hover:bg-blue-700">
             <ArrowDownIcon className="mr-2 h-5 w-5" />
-            <Link href="/about">DOWNLOAD MY RESUME</Link>
+            <a href="/static/files/resume.pdf" download="Shevon_Zhang_Resume.pdf">
+              DOWNLOAD MY RESUME
+            </a>
           </button>
         </div>
       </div>
