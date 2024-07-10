@@ -8,6 +8,7 @@ import Introduction from './Introduction'
 import MePage from '../about/page'
 import SkillsPage from './skills/page'
 import Projects from '../projects/page'
+import ScrollToTopButton from '@/components/ScrollToTopButton'
 
 const TopIndexPage = () => {
   return (
@@ -17,6 +18,7 @@ const TopIndexPage = () => {
       <SkillsPage />
       <TimeLine />
       <Projects />
+      <ScrollToTopButton />
     </div>
   )
 }

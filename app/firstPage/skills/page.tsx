@@ -19,12 +19,11 @@ const skills = [
       'Bootstrap',
       'Echarts',
       'WeChat Mini-Programs',
-
       'Tailwind CSS',
       'SVG LottieFiles',
       'Uniapp',
       'Responsive Web Design',
-      'Network Knowledge (HTTP, TCP, etc.)',
+      'Internet Protocol',
     ],
     bgColor: '#3B82F6', // Tailwind blue-500
     borderColor: 'border-blue-500',
@@ -39,7 +38,7 @@ const skills = [
   // },
   {
     type: 'Backend Development & Tools',
-    skills: ['Node.js', 'Next.js', 'Koa2', 'MySQL', 'Git', 'VS Code', 'ESLint'],
+    skills: ['Node.js', 'Next.js', 'Koa2', 'MySQL', 'Git', 'VS Code', 'ESLint', 'RESTful APIs'],
     bgColor: '#10B981',
     borderColor: 'border-teal-700',
     textColor: 'text-teal-700',
