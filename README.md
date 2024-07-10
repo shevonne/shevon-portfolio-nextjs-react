@@ -31,8 +31,8 @@ Ensure you have the following installed:
 
 ```bash
 
-git clone https://github.com/shevonzhang/shevon-portfolio.git
-cd shevon-portfolio
+git clone https://github.com/shevonne/shevon-nextjs-site.git
+cd shevon-nextjs-site
 npm install
 npm run dev
 
