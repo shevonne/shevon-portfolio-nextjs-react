@@ -44,16 +44,15 @@ const timelineData = [
 const Timeline: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="mb-8 text-center text-4xl font-bold">PROFESSIONAL EXPERIENCE</h1>
+      <h1 className="mb-8 text-center text-2xl font-bold md:text-4xl">PROFESSIONAL EXPERIENCE</h1>
       <div className="relative">
         {/* 中央时间线 */}
         <div className="absolute inset-0 flex items-center justify-center">
-          {/* 时间线 */}
-          <div className="h-full w-0.5 bg-gray-800"></div>
+          <div className="hidden h-full w-0.5 bg-gray-800 md:block"></div>
           {/* 时间线起点 */}
-          <div className="absolute top-0 -mt-1.5 h-3 w-3 rounded-full bg-gray-800"></div>
+          <div className="absolute top-0 -mt-1.5 hidden h-3 w-3 rounded-full bg-gray-800 md:block"></div>
           {/* 时间线终点 */}
-          <div className="absolute bottom-0 -mb-1.5 h-3 w-3 rounded-full bg-gray-800"></div>
+          <div className="absolute bottom-0 -mb-1.5 hidden h-3 w-3 rounded-full bg-gray-800 md:block"></div>
         </div>
         <div className="relative z-10">
           {timelineData.map((item, index) => (

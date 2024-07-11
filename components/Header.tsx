@@ -9,7 +9,7 @@ import SearchButton from './SearchButton'
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between pb-20 pt-10">
+    <header className="flex items-center justify-between pt-10 md:pb-20">
       <div>
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between duration-300 ease-in hover:scale-110">
@@ -24,7 +24,7 @@ const Header = () => {
               />
             </div>
             {typeof siteMetadata.headerTitle === 'string' ? (
-              <div className="hidden h-6 text-3xl font-bold font-semibold sm:block">
+              <div className="h-6 text-2xl font-bold font-semibold sm:block md:text-3xl">
                 {siteMetadata.headerTitle}
               </div>
             ) : (

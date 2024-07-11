@@ -7,17 +7,18 @@ import Link from '@/components/Link'
 import AnimatedCartoon from './animate'
 import SocialLinks from '@/components/SocialLinks'
 import { ArrowDownIcon } from '@heroicons/react/24/solid'
+
 const Introduction = () => {
   return (
-    <div className="item-top relative flex min-h-screen flex-row justify-center text-white">
+    <div className="item-top relative flex min-h-screen flex-col justify-center text-white md:flex-row">
       {/* left */}
-      <div className="basis-3/5">
-        <h1 className="py-20 text-6xl font-bold text-gray-900 dark:text-gray-100">
+      <div className="basis-full px-4 md:basis-3/5 md:px-0">
+        <h1 className="py-10 text-4xl font-bold text-gray-900 dark:text-gray-100 md:py-20 md:text-6xl">
           Hi There! I'm Shevon<span className="animate-wave"> 👋 </span>
         </h1>
 
         <div className="z-10 animate-fadeIn">
-          <h1 className="mb-10 text-4xl font-bold text-blue-500 dark:text-gray-100">
+          <h1 className="mb-6 text-2xl font-bold text-blue-500 dark:text-gray-100 md:mb-10 md:text-4xl">
             <Typewriter
               words={[
                 'Front-End Engineer with Full Stack Skills',
@@ -31,27 +32,35 @@ const Introduction = () => {
             />
           </h1>
         </div>
-        {/* <p className="mb-10 text-4xl font-bold text-gray-900 dark:text-gray-100">I'm Shevon</p> */}
-        <p className="mb-10 text-2xl text-gray-900 dark:text-gray-100">
+
+        <p className="mb-6 text-lg text-gray-900 dark:text-gray-100 md:mb-10 md:text-2xl">
           A passionate Web Developer 🌟 with experience in building web applications using
           JavaScript, React, and Vue.js. Skilled in big data visualization and smart IoT solutions.
           Proficient in PC, responsive design, mobile H5, and WeChat Mini Programs. Passionate about
           hands-on creation and maintaining a work-life balance.
         </p>
-        <SocialLinks />
-        <div className="z-10 mt-8 flex">
-          <button className="text-1xl mr-10 flex rounded bg-blue-500 px-4 py-2 font-bold transition hover:bg-blue-700">
-            <Link href="/about">ABOUT ME</Link>
-          </button>
-          <button className="text-1xl flex rounded bg-blue-500 px-4 py-2 font-bold transition hover:bg-blue-700">
+        <div className="flex justify-center md:justify-start">
+          <SocialLinks />
+        </div>
+
+        <div className="z-10 mt-6 flex flex-col md:mt-8 md:flex-row">
+          <Link
+            href="/about"
+            className="mb-4 mr-0 flex items-center justify-center rounded bg-blue-500 px-4 py-2 text-lg font-bold transition hover:bg-blue-700 md:mb-0 md:mr-10 md:text-xl"
+          >
+            ABOUT ME
+          </Link>
+          <a
+            href="/static/files/webDeveloper_shevon.pdf"
+            download="Shevon_webDeveloper.pdf"
+            className="flex items-center justify-center rounded bg-blue-500 px-4 py-2 text-lg font-bold transition hover:bg-blue-700 md:text-xl"
+          >
             <ArrowDownIcon className="mr-2 h-5 w-5" />
-            <a href="/static/files/webDeveloper_shevon.pdf" download="Shevon_webDeveloper.pdf">
-              DOWNLOAD MY RESUME
-            </a>
-          </button>
+            DOWNLOAD MY RESUME
+          </a>
         </div>
       </div>
-      <div className="basis-2/5 translate-x-0  opacity-100">
+      <div className="mt-6 flex basis-full justify-center md:mt-0 md:basis-2/5">
         <AnimatedCartoon animationPath="/static/animate/myhomegirl.json" />
       </div>
     </div>

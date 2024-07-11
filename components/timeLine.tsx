@@ -10,6 +10,7 @@ import {
   BuildingOffice2Icon,
   PresentationChartLineIcon,
 } from '@heroicons/react/24/solid'
+
 interface TimelineItemProps {
   index: number
   date: string
@@ -32,15 +33,15 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
 
   const isLeft = index % 2 === 0
   return (
-    <div ref={ref} className="relative mb-8 flex items-center justify-between">
+    <div ref={ref} className="relative mb-8 flex flex-col items-center justify-between md:flex-row">
       {isLeft ? (
         <>
           {/* 左侧显示年份 */}
-          <div className="flex w-1/2 flex-row items-center justify-end pr-4">
-            <span className="mb-2 animate-bounce font-medium text-gray-800">{date}</span>
+          <div className="mb-4 flex w-full flex-row items-center justify-center md:mb-0 md:w-1/2 md:justify-end md:pr-4">
+            <span className="font-medium text-gray-800 md:animate-bounce">{date}</span>
             {/* 圆点 */}
             <motion.div
-              className="absolute h-6 w-6 rounded-full border-2 border-gray-800"
+              className="absolute hidden h-6 w-6 rounded-full border-2 border-gray-800 md:block"
               style={{
                 left: '50%',
                 transform: 'translateX(-50%)',
@@ -53,10 +54,9 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
             />
           </div>
           {/* 右侧显示详细信息 */}
-          <div className="w-1/2 pl-8 text-left">
+          <div className="w-full text-left md:w-1/2 md:pl-8">
             <div className="group relative rounded-lg border border-gray-800 bg-transparent p-6 leading-relaxed shadow-lg duration-300 ease-in-out">
               <h3 className="mb-5 flex items-center justify-items-center text-2xl font-semibold text-blue-500 duration-300 ease-in-out group-hover:text-3xl">
-                {/* <UserIcon className="h-5 w-5 text-blue-500" /> */}
                 {position}
               </h3>
               <p className="mb-2 flex items-center justify-items-center text-gray-900 group-hover:text-xl">
@@ -84,10 +84,9 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
       ) : (
         <>
           {/* 左侧显示详细信息 */}
-          <div className="w-1/2 pr-8 text-left">
+          <div className="mb-4 w-full text-left md:mb-0 md:w-1/2 md:pr-8">
             <div className="group relative rounded-lg border border-gray-800 bg-transparent p-6 leading-relaxed shadow-lg duration-300 ease-in-out">
-              <h3 className="mb-5 flex text-2xl font-semibold  text-blue-500 duration-300 ease-in-out group-hover:text-3xl">
-                {/* <UserIcon className="h-5 w-5 text-blue-500" /> */}
+              <h3 className="mb-5 flex text-2xl font-semibold text-blue-500 duration-300 ease-in-out group-hover:text-3xl">
                 {position}
               </h3>
               <p className="mb-2 flex text-gray-900 group-hover:text-xl">
@@ -112,9 +111,9 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
             </div>
           </div>
           {/* 右侧显示年份 */}
-          <div className="flex w-1/2 flex-row items-center pl-4">
+          <div className="flex w-full flex-row items-center justify-center md:w-1/2 md:justify-start md:pl-4">
             <motion.div
-              className="absolute h-6 w-6 rounded-full border-2 border-gray-800"
+              className="absolute hidden h-6 w-6 rounded-full border-2 border-gray-800 md:block"
               style={{
                 left: '50%',
                 transform: 'translateX(-50%)',
@@ -125,7 +124,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             />
-            <span className="mt-2 animate-bounce font-medium text-gray-800">{date}</span>
+            <span className="font-medium text-gray-800 md:animate-bounce">{date}</span>
           </div>
         </>
       )}

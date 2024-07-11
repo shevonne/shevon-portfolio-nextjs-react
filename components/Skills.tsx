@@ -20,7 +20,7 @@ const SkillComponent: React.FC<{ skill: Skill }> = ({ skill }) => {
         {skill.skills.map((skillItem, index) => (
           <motion.div
             key={index}
-            className={`m-2 rounded-full border px-4 py-2 text-base font-bold ${skill.borderColor} ${skill.textColor}`}
+            className={`m-2 rounded-full border px-2 py-1 text-sm font-bold md:px-4 md:py-2 md:text-base ${skill.borderColor} ${skill.textColor}`}
             style={{ backgroundColor: `${skill.bgColor}33` }} // 1A is hex for 10% opacity
             whileHover={{
               scale: 1.2,
@@ -45,7 +45,7 @@ const SkillComponent: React.FC<{ skill: Skill }> = ({ skill }) => {
 const SkillsShowcase: React.FC<{ skills: Skill[] }> = ({ skills }) => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="mb-20 text-center text-4xl font-bold">My Skills</h1>
+      <h1 className="mb-20 text-center text-2xl font-bold md:text-4xl">My Skills</h1>
       {skills.map((skill, index) => (
         <SkillComponent key={index} skill={skill} />
       ))}

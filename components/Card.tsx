@@ -2,30 +2,35 @@ import Image from './Image'
 import Link from './Link'
 
 const Card = ({ title, description, imgSrc, href }) => (
-  <div className="md max-w-[470px] p-10 md:w-1/3">
-    <div className={`${imgSrc && 'h-full'}  overflow-hidden rounded-lg`}>
-      {imgSrc &&
-        (href ? (
-          <Link href={href} aria-label={`Link to ${title}`}>
+  <div className="mx-auto max-w-[470px] p-6 md:w-1/3 md:max-w-none md:p-10">
+    <div
+      className={`${imgSrc && 'h-full'} overflow-hidden rounded-lg bg-white shadow-md dark:bg-gray-800`}
+    >
+      {imgSrc && (
+        <div className="relative">
+          {href ? (
+            <Link href={href} aria-label={`Link to ${title}`}>
+              <Image
+                alt={title}
+                src={imgSrc}
+                className="transform-gy:rotate-y-4 rounded-t-lg object-cover object-center transition-transform duration-300 ease-in-out hover:scale-105"
+                width={544}
+                height={306}
+              />
+            </Link>
+          ) : (
             <Image
               alt={title}
               src={imgSrc}
-              className=" rounded-lg object-cover object-center transition delay-150 duration-300 ease-in-out hover:-translate-y-4 hover:scale-125 md:h-36 lg:h-48"
+              className="transform-gy:rotate-y-4 rounded-t-lg object-cover object-center transition-transform duration-300 ease-in-out hover:scale-105"
               width={544}
               height={306}
             />
-          </Link>
-        ) : (
-          <Image
-            alt={title}
-            src={imgSrc}
-            className=" rounded-lg object-cover object-center transition delay-150 duration-300 ease-in-out hover:-translate-y-4 hover:scale-125 md:h-36 lg:h-48"
-            width={544}
-            height={306}
-          />
-        ))}
-      <div className="p-10">
-        <h2 className="mb-3 animate-bounce  text-2xl font-bold leading-8 tracking-tight hover:text-3xl hover:text-blue-500">
+          )}
+        </div>
+      )}
+      <div className="p-4 md:p-10">
+        <h2 className="mb-3 text-xl font-bold leading-8 text-gray-900 hover:text-blue-500 dark:text-gray-200">
           {href ? (
             <Link href={href} aria-label={`Link to ${title}`}>
               {title}
@@ -34,11 +39,11 @@ const Card = ({ title, description, imgSrc, href }) => (
             title
           )}
         </h2>
-        <p className="prose mb-3 max-w-none  text-gray-900 dark:text-gray-400">{description}</p>
+        <p className="text-sm text-gray-700 dark:text-gray-300">{description}</p>
         {href && (
           <Link
             href={href}
-            className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+            className="mt-2 inline-block text-sm font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
             aria-label={`Link to ${title}`}
           >
             Learn more &rarr;
