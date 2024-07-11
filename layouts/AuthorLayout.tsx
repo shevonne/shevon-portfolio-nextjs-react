@@ -15,7 +15,7 @@ export default function AuthorLayout({ children, content }: Props) {
     <>
       <div className="mb-20 min-h-screen divide-y divide-dashed divide-gray-500/25">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
-          <h1 className="text-center text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-2xl sm:leading-10 md:text-start md:text-4xl md:leading-14">
+          <h1 className="text-center text-2xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-2xl sm:leading-10 md:text-start md:text-4xl md:leading-14">
             Let Me Introduce Myself
           </h1>
         </div>
@@ -31,7 +31,7 @@ export default function AuthorLayout({ children, content }: Props) {
               />
             )}
             <h3 className="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight">{name}</h3>
-            <div className="m-2 rounded-full border border-gray-500 bg-transparent px-4 py-2 text-base font-bold text-gray-800 shadow dark:text-gray-400">
+            <div className="m-2 rounded-full border border-gray-500 bg-transparent px-4 py-2 text-base font-bold text-gray-800 shadow">
               {occupation}
             </div>
             {/* <div className="flex text-gray-500">
@@ -54,7 +54,7 @@ export default function AuthorLayout({ children, content }: Props) {
             </div>
             {/* <div>Feel free to connect with me</div> */}
           </div>
-          <div className="prose max-w-none pb-8 pt-8 font-sans text-lg dark:prose-invert xl:col-span-2">
+          <div className="prose max-w-none pb-8 pt-8 font-sans text-lg  xl:col-span-2">
             {children}
           </div>
         </div>
