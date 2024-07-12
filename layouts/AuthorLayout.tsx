@@ -16,7 +16,7 @@ export default function AuthorLayout({ children, content }: Props) {
       <div className="mb-20 min-h-screen divide-y divide-dashed divide-gray-500/25">
         <div className="space-y-2 pb-8 pt-6 md:space-y-5">
           <h1 className="text-center text-2xl font-extrabold leading-9 tracking-tight text-gray-900 sm:text-2xl sm:leading-10 md:text-start md:text-4xl md:leading-14">
-            Let Me Introduce Myself
+            More About Me
           </h1>
         </div>
         <div className="space-y-2 pt-10 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">

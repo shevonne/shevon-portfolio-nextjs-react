@@ -23,7 +23,6 @@ const Introduction = () => {
               words={[
                 'Front-End Engineer with Full Stack Skills',
                 'Hands-On Explorer with Attention to Detail',
-                'Work-Life Balance Promoter',
               ]}
               loop={false}
               cursor
@@ -34,10 +33,10 @@ const Introduction = () => {
         </div>
 
         <p className="mb-6 text-lg text-gray-900 md:mb-10 md:text-2xl">
-          A passionate Web Developer 🌟 with experience in building web applications using
-          JavaScript, React, and Vue.js. Skilled in big data visualization and smart IoT solutions.
-          Proficient in PC, responsive design, mobile H5, and WeChat Mini Programs. Passionate about
-          hands-on creation and maintaining a work-life balance.
+          A Web Developer 🌟 with experience in building web applications using JavaScript, React,
+          and Vue.js. Skilled in big data visualization and smart IoT solutions. Proficient in PC,
+          responsive design, mobile Html5, and WeChat Mini Programs. Passion for hands-on
+          exploration, paying attention to detail, and creating aesthetically pleasing designs.
         </p>
         <div className="flex justify-center md:justify-start">
           <SocialLinks />
