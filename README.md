@@ -4,13 +4,24 @@ Welcome to Shevon's Portfolio! This is a personal website built with Next.js and
 
 **You can view the live version of the site at:** 🌐 [Web Developer Shevon](https://www.shevon.cn/)
 
+<img width="1746" alt="image" src="https://github.com/user-attachments/assets/47254ecd-0dbe-4699-b1bd-a40802ac7c5b">
+<img width="1620" alt="image" src="https://github.com/user-attachments/assets/c89f827b-4b48-4a18-aa71-e611f7be8757">
+
 ## 🏷 Features 功能
 
-- Personal homepage with an introduction and overview
-- Blog section for articles and posts
-- Project showcase with descriptions and links
-- Responsive design with TailwindCSS
-- SEO optimized with Next.js
+### Current Features 🌲 
+
+- [x] Personal homepage with an introduction and overview
+- [x] Project showcase with descriptions and links
+- [x] Responsive design with TailwindCSS
+- [x] SEO optimized with Next.js
+
+### Planned Features 🌱
+
+- [ ] Adding blog-related content
+- [ ] Optimizing data by separating data from pages
+- [ ] Implementing internationalization (i18n) for both English and Chinese languages
+
 
 ## 🛠 Technology Stack 技术栈
 
