@@ -38,4 +38,8 @@ npm run dev
 
 ```
 
-- Open http://localhost:3000 with your browser to see the result.
+Open http://localhost:3000 with your browser to see the result.
+
+### Acknowledgements 致谢
+
+This project is built upon the [Tailwind Next.js Starter Blog](https://github.com/timlrx/tailwind-nextjs-starter-blog) by Timothy Lin. Special thanks to the original author for providing a great foundation.
