@@ -20,7 +20,7 @@ const timelineData = [
   {
     date: '2017-2019',
     company: 'Beijing Xinzhi Lian Technology Co., Ltd',
-    position: 'Front-End Team Lead',
+    position: 'Front-End Developer',
     address: 'Beijing, China',
     description: [
       "Company's Best Productivity Award.",

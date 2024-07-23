@@ -6,7 +6,8 @@ import Image from 'next/image'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
 import SearchButton from './SearchButton'
-
+import { CodeBracketIcon } from '@heroicons/react/24/solid'
+import SocialIcon from '@/components/social-icons'
 const Header = () => {
   return (
     <header className="flex items-center justify-between pt-10 md:pb-20">
@@ -49,6 +50,12 @@ const Header = () => {
         {/* <SearchButton />
         <ThemeSwitch /> */}
         <MobileNav />
+        <div>
+          <SocialIcon kind="github" href={siteMetadata.webGithub} size={8} />
+          {/* <Link href={siteMetadata.webGithub}>
+            <CodeBracketIcon className="mr-2 h-8 w-8 text-pink-500" />
+          </Link> */}
+        </div>
       </div>
     </header>
   )
